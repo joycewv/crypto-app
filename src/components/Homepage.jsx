@@ -1,12 +1,14 @@
 import { Statistic, Typography, Row, Col } from 'antd';
 import React from 'react';
 //import millify from 'millify';
-
 //import { Link } from 'react-router-dom';
+import { useGetCryptosQuery } from '../services/cryptoApi';
 
 const { Title } = Typography;
 
 const Homepage = () => {
+  const { data, isFetching } = useGetCryptosQuery ();
+  console.log(data); 
   return (
     <>
     <Title level={2} className='heading'>Global Crypto Stats</Title>
