@@ -20,9 +20,6 @@ const Cryptocurrencies = ({ simplified }) => {
 
   if(isFetching) return 'Loading...';
 
-
-
-
   return (
     <>
       {!simplified && (
@@ -49,7 +46,6 @@ const Cryptocurrencies = ({ simplified }) => {
         ))}
 
       </Row>
-
     </>
   )
 }
