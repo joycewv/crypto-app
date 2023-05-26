@@ -19,7 +19,7 @@ export const cryptoApi = createApi({
         getCryptoDetails: builder.query({
             query: (coinId) => createRequest(`/coin/${coinId}`),
         }),
-    })
+    }),
 
 });
 
@@ -28,19 +28,3 @@ export const {
     useGetCryptoDetailsQuery,
 } = cryptoApi;
 
-
-//const options = {
-//    method: 'GET',
-//    url: 'https://coinranking1.p.rapidapi.com/exchanges',
-//    params: {
-//      referenceCurrencyUuid: 'yhjMzLPhuIDl',
-//      limit: '50',
-//      offset: '0',
-//      orderBy: '24hVolume',
-//      orderDirection: 'desc'
-//    },
-//    headers: {
-//      'X-RapidAPI-Key': 'da0e559690mshfbd17697b86796ep16e41fjsnfe5fdb7e212d',
-//      'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
-//    }
-//  };
